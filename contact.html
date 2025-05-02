@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="AgriUnityLogo.png" type="image/icon type" />
+  <title>Contact Us | AgriUnity</title>
+  <link rel="stylesheet" href="contact.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome 6 CDN for all icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="footer.css">
+<script defer src="main.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="AgriUnityLogo.png" alt="AgriUnity Logo" class="logo-image" />
+          <a href="#">AgriUnity</a>
+        </div>
+    
+        <div class="menu">
+          <div class="menu-links">
+            <div class="dropdown">
+              <a href="index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <a href="Materials.html">Agri Materials<span class="dropdown-arrow">&#9662;</span></a>
+              <div class="dropdown-content">
+                <a href="LOGINFORMAGR.html">Jntuk B.Tech</a>
+                <a href="jntukBTech.html" id="jntuk">JNTUK B.Tech PQP</a>
+                <a href="diploma.html" id="diploma">Diploma</a>
+                <a href="ecetMCQ.html">E-CET MCQ</a>
+                <a href="afoMCQ.html" id="afo-mcq">AFO MCQ</a>
+                <a href="pgcetMCQ.html" id="pgcet-mcq">PG-CET MCQ</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="result.html">JNTUK Updates</a>
+            </div>
+            <div class="dropdown">
+              <a href="jobupdates.html">Job & Training</a>
+            </div>
+            <div class="dropdown">
+              <a href="quiz.html">Quiz</a>
+            </div>
+            <div class="dropdown">
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <button class="log-in" onclick="location.href='LOGINFORMAGR.html'">Log In</button>
+        </div>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+  <section class="contact-section">
+    <div class="header">
+      <i class="fas fa-comments icon"></i>
+      <h1>Get In Touch,</h1>
+      <h1>We’d love to here from you.</h1>
+      <p>Here's what some of my satisfied clients have to say about my work</p>
+      <div class="features">
+        <span><i class="fas fa-headset"></i> 24 / 7 Assistance</span>
+        <span><i class="fas fa-bolt"></i> Quick Change Resolutions</span>
+        <span><i class="fas fa-star"></i> Flexible Working hours</span>
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="info-box">
+          <h4>You can Email Me Here</h4>
+          <p><a href="mailto:support@agriunity.in">support@agriunity.in<span class="arrow">&#8594;</span></a></p>
+          
+        </div>
+        <div class="info-box">
+          <h4>Give Me a Call on</h4>
+          <p><a href="tel:+919010923538">+91 9010923538 <span class="arrow">&#8594;</span> </a></p>
+          
+        </div>
+        <!-- <div class="info-box">
+          <h4>Location</h4>
+          <p>Somewhere in the World</p>
+          <span class="arrow">&#8594;</span>
+        </div> -->
+        <div class="social">
+          <h4>My Social Profiles</h4>
+          <div class="social-icons">
+            <i href="https://wa.me/919010923538" style="background-color: #12ad2b;" class="fab fa-whatsapp"></i>
+            <i href="https://www.instagram.com/agriunity_?igsh=NzM0ZXVvdzJjbm5l" style="background-color: #12ad2b;" class="fab fa-instagram"></i>
+            <i href="#" style="background-color: #12ad2b;" class="fab fa-facebook"></i>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <h1>Contact Us</h1>
+        <br>
+        <div class="form-row">
+          <input type="text" name="first_name" placeholder="First Name" required>
+          <input type="text" name="last_name" placeholder="Last Name" >
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+        </div>
+        <div class="checkbox-group">
+          <p>Why are you contacting us?</p>
+          <label><input type="checkbox" name="reason" value="Materials" > Materials</label>
+          <label><input type="checkbox" name="reason" value="Job Updates"> Job Updates</label>
+          <label><input type="checkbox" name="reason" value="Results"> Results</label>
+          <label><input type="checkbox" name="reason" value="Others"> Others</label>
+        </div>
+        <textarea name="message" rows="5" placeholder="Your Message here..." required></textarea>
+        <button type="submit">Send</button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <p> &#x2705<br><br>Thanks for reaching out! We'll be in touch soon.</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Phone: +91 9010923538</p>
+        <p>Email: <a href="mailto:support@agriunity.in">support@agriunity.in</a></p>
+      </div>
+  
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100065116946238" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/agriunity_?igsh=NzM0ZXVvdzJjbm5l" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:support@agriunity.in" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2021 AgriUnity. All Rights Reserved.</p>
+  </footer>
+  <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Form to WhatsApp</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f9f9f9;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #25D366;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1ebea5;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="contactForm">
+    <h2>Contact Us</h2>
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send on WhatsApp</button>
+  </form>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // prevent normal form submit
+
+      // Get form values
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      // Check if all fields are filled (extra safety)
+      if (name === "" || email === "" || message === "") {
+        alert("Please fill all the fields.");
+        return;
+      }
+
+      // Construct the WhatsApp message
+      const whatsappMessage = `Hello, I received a new form submission:%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+
+      // Your WhatsApp number (country code without + sign)
+      const phoneNumber = "917901270767"; // <- Replace with your own number
+
+      // Open WhatsApp chat
+      window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, '_blank');
+
+      // Optionally clear the form after sending
+      document.getElementById('contactForm').reset();
+    });
+  </script>
+
+</body>
+</html>

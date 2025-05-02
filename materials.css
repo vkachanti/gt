@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin: 30px 10px 20px 10px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #2e7d32;
+}
+
+.header p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Materials Cards Container */
+.materials-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Single Material Card */
+.material-card {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+}
+
+/* Hover for Desktop */
+.material-card:hover {
+    transform: translateY(-8px);
+    background-color: #e8f5e9;
+}
+
+/* Active State for Mobile (Touch Highlight) */
+.material-card:active {
+    background-color: #d0f0d5; /* slightly darker green */
+    transform: scale(0.97);
+}
+
+.material-card h2 {
+    color: #2e7d32;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.material-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .materials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .material-card {
+        width: 90%;
+    }
+}

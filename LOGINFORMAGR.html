@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="footer.css">
+  
+  <script defer src="main.js"></script>
+  <script defer src="login.js"></script> <!-- your login js file -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+</head>
+<style>
+  /* Button style within .inside div */
+/*       .inside button {
+    border-radius: 20px;
+    color: white;
+    background-color: #001e4d;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  } */
+  
+  /* Optional hover effect */
+  .inside button:hover {
+    background-color: #003366; /* Darker shade on hover */
+  } 
+
+  /* Styling for the button text link */
+  .inside button a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+  }
+</style>
+<script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="AgriUnityLogo.png" alt="AgriUnity Logo" class="logo-image" />
+      <a href="index.html">AgriUnity</a>
+    </div>
+
+    <div class="menu">
+      <div class="menu-links">
+        <div class="dropdown">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="dropdown">
+          <a href="Materials.html">Agri Materials<span class="dropdown-arrow">&#9662;</span></a>
+          <div class="dropdown-content">
+            <a href="LOGINFORMAGR.html">Jntuk B.Tech</a>
+            <a href="jntukBTech.html" id="jntuk">JNTUK B.Tech PQP</a>
+            <a href="diploma.html" id="diploma">Diploma</a>
+            <a href="ecetMCQ.html">E-CET MCQ</a>
+            <a href="afoMCQ.html" id="afo-mcq">AFO MCQ</a>
+            <a href="pgcetMCQ.html" id="pgcet-mcq">PG-CET MCQ</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="result.html">JNTUK Updates</a>
+        </div>
+        <div class="dropdown">
+          <a href="jobtraing.html">Job & Training</a>
+        </div>
+        <div class="dropdown">
+          <a href="quiz.html">Quiz</a>
+        </div>
+        <div class="dropdown">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <button class="log-in" onclick="location.href='LOGINFORMAGR.html'">Log In</button>
+    </div>
+
+    <div class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+  <br><br><br>
+  <div class="inside">
+    <div id="login-section">
+      <section class="container">
+  
+        <div class="image-section">
+          <div class="image-wrapper">
+            
+          </div>
+  
+          <div class="content-container">
+            <h1 class="section-heading">Empowering Minds Through Digital <span>Education.</span></h1>
+            <p class="section-paragraph">Every step forward is a step towards knowledge. Embrace the journey.</p>
+          </div>
+        </div>
+  
+        <div class="form-section">
+          <div class="form-wrapper">
+            <div class="logo-container">
+              <a href="#" class="logo-container">
+                <img src="AgriUnity.jpg" alt="Logo">
+              </a>
+            </div>
+  
+            <h2>Welcome Back! 👋🏻</h2>
+            <p>Enter your credentials to access your account.</p>
+  
+            <div class="input-container">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" autocomplete="on">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+              </div>
+            </div>
+  
+            <div class="remember-forgot">
+              <div class="remember-me">
+                <input type="checkbox" value="remember-me" id="remember-me">
+                <label for="remember-me">Remember me</label>
+              </div>
+  
+              <a href="#">Forgot password?</a>
+            </div>
+  
+            <button class="login-btn" onclick="login()">Log In</button>
+  
+            <div class="or-divider">or</div>
+  
+            <button class="google-signin">
+              <object data="./google.svg"></object>
+              <a href="NagrApplication.html">Register Now</a>
+            </button>
+           <br>
+               <button class="google-signin">
+              <object data="./google.svg"></object>
+              <a href="renewalform.html">Renewal User Registration</a>
+            </button>
+          </div>
+        </div>
+      </section>
+  
+    </div>
+      <!-- B.Tech materials section -->
+  <div id="btech-materials" style="display: none;">
+  <br>
+    <button style="border-radius: 20px; color: white; background-color: #001e4d;">
+      <a href="NAgrMaterial.html" style="text-decoration: none; color: inherit; display: block;"><b>Go Back</b></a>
+    </button>
+    <br>
+  
+    <h2>JNTUK B.Tech Agriculture Available Materials</h2>
+    <h4>Click on Open and Scroll Down To Read The Material</h4>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Material Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>  
+        <!-- Add more rows as needed -->
+    <td>Maths-III</td><td><button  style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="6a8ef2a2-a3d6-4869-bbc5-1daa9728fd1e">open</button></td></tr>
+  <tr><td>Surveying</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="1042f6d1-c0a7-46a0-a5a7-cf36a7569e15">open</button></td></tr>
+  <tr><td>Fluid Mechanics&Open Channels</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="ee183d75-7725-4fae-8b59-2a51ba48b7ac">open</button></td></tr>
+  <tr><td>Electrical Systems</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="16d0fb35-acec-412b-bf98-1b0fe2515fbc">open</button></td></tr>
+  <tr><td>Properties and Strength of Material</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="9f96821b-ec97-4a92-87a3-ff692cd23877">open</button></td></tr>
+  <tr><td>Suface Water Hydrology</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="3b5a0d7e-0ed7-400d-8d04-2f4930b84065">open</button></td></tr>
+  <tr><td>Watershed Management</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="'db266774-3fcc-434c-a0c7-5e1e78875c49">open</button></td></tr>
+  <tr><td>Soil & Water Conservation Engineering</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="feb1daa2-acf8-4432-bf7c-32ca5d8161a2">open</button></td></tr>
+  <tr><td>Thermodynamics and Refrigeration Systems</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="188b83bb-8080-4312-b88d-bc676aeb17a5">open</button></td></tr>
+  <tr><td>Theory Of Machines</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="7d5ecdf0-b416-4f35-a99a-03d472542be8">open</button></td></tr>
+  <tr><td>Theory of Structure</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="7b6adea7-f754-41d5-899b-8783804e1a75">open</button></td></tr>
+  <tr><td>Ground water Hydrology</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="b958940b-a193-41b5-b76d-26a45112eb33">open</button></td></tr>
+  <tr><td>Soil Mechanics</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="9994ad4d-6588-4c1c-8055-76c21d83972a">open</button></td></tr>
+  <tr><td>Farm Power & Tractor Systems</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="816c66c9-ccae-4d66-b819-2f5b6e3870be">open</button></td></tr>
+  <tr><td>Farm Machinery Equipment-I</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="a3c691a5-b15b-42d6-9e34-4a0da7984cb7">open</button></td></tr>
+  <tr><td>Farm Machinery Equipment-II</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="bd2d9687-2e1d-45aa-a87c-951d92a7fe6e">open</button></td></tr>
+  <tr><td>Agricultural process Engineering</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="c1eafbc7-9f85-4430-b7e4-f89b42c5772e">open</button></td></tr>
+  <tr><td>Dairy & Food Engineering</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="f7bbc978-23dc-4033-abb6-ff8408c85c27">open</button></td></tr>
+  <tr><td>Food Quality&Control</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="b1813f8a-14e3-4b1f-a2f7-b06f0411aa23">open</button></td></tr>
+  <tr><td>Micro Irrigation</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="9fc9d2af-0f84-458b-a411-5149758ccbc4">open</button></td></tr>
+  <tr><td>GIS & Remote Sensing</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="fc690059-37a9-4cfc-a002-de8480b3c806">open</button></td></tr>
+  <tr><td>Green House Technoogy</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="94aec084-49c5-476d-abff-5ba76f2f5e24">open</button></td></tr>
+  <tr><td>Human Engineering Safety</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="8361499a-3940-4d5b-8f86-59dfc025a1ad">open</button></td></tr>
+  <tr><td>Heat and Mass Transfer </td><td><button id="downloadHMT">DOWNLOAD</button></td></tr>
+  <tr><td>Operation Research</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="1f8b03f0-1eb4-4c1c-858a-40f66ffdbcea">open</button></td></tr>
+  <tr><td>Food Packing Technology</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="d9faa0c1-16fa-4c78-8df6-7033b36ae7ce">open</button></td></tr>
+  <tr><td>Food Plant Design and Management</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="63f536e0-c98a-46b1-8874-979b90e97429">open</button></td></tr>
+  <tr><td>Irrigation & Drinage Engineering</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="587ca87b-1100-4425-bd8a-97061306ec00">open</button></td></tr>
+  <tr><td>Managerial Economics and Financial Analysis</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="de4f7175-43ae-42b6-b97d-afb7b4a2ea1b">open</button></td></tr>
+  <tr><td>Engineering Properties of Biological Materials</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="18b794e8-80d3-4cca-bf04-0656f67c6c21">open</button></td></tr>
+  <tr><td>Mechanical Measurements and Instrumentation</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="de4f7175-43ae-42b6-b97d-afb7b4a2ea1b">open</button></td></tr>
+  <tr><td>Photo Voltic Technology & System</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="73e2592d-e7f9-483b-9fd8-5cc14e3fc1f3">open</button></td></tr>
+  <tr><td>Design of Agriculture Machinery</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="c365f03c-a555-4f22-97a4-5f6b476797cb">open</button></td></tr>
+  <tr><td>Agro Industries and By-Products Utilization</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="75308569-160b-49a1-8e95-46a953f6b679">open</button></td></tr>
+  <tr><td>Post Harvesting Engineering & Horticulture Produce</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="4cac706d-a8ca-4c94-b644-274d7d1353ba">open</button></td></tr>
+  <tr><td>Design of Soil and Water Conservation and Form Systems</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="d3956833-03b3-46e6-9c3d-4a4be62b1a22">open</button></td></tr>
+  <tr><td>Agricultural Extension Techniques and Business Management</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="48470b40-34f2-4193-8ef3-cdef12cfa1b7">open</button></td></tr>
+  
+      </tbody>
+  </table>
+  
+  <div id="viewer1" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                    <div id="viewer2" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                    <div id="viewer3" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer4" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer5" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer6" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer7" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer8" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer9" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer10" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer11" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer12" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer13" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer14" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer15" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer16" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer17" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer18" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer19" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer20" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer21" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer22" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer23" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer24" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer25" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer26" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer27" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer28" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer29" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer30" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer31" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer32" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer33" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer34" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer35" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer36" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer37" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  </div>
+  
+  </div>
+  
+<!-- footer -->
+
+                  <footer class="footer">
+                    <div class="footer-content">
+                      <div class="footer-section contact">
+                        <h3>Contact Us</h3>
+                        <p>Phone: +91 9010923538</p>
+                        <p>Email: <a href="mailto:support@agriunity.in">support@agriunity.in</a></p>
+                      </div>
+                  
+                      <div class="footer-section links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                          <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">Terms and Conditions</a></li>
+                        </ul>
+                      </div>
+                  
+                      <div class="footer-section social">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                          <a href="https://www.facebook.com/profile.php?id=100065116946238" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://www.instagram.com/agriunity_?igsh=NzM0ZXVvdzJjbm5l" target="_blank"><i class="fab fa-instagram"></i></a>
+                           <a href="mailto:support@agriunity.in" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="footer-bottom">&copy; 2021 AgriUnity. All Rights Reserved.</p>
+                  </footer>
+
+</body>
+</html>

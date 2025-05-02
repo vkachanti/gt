@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Materials|AgriUnity</title>
+  <link rel="icon" href="AgriUnityLogo.png" type="image/icon type" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Correct FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
+  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="materials.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="AgriUnityLogo.png" alt="AgriUnity Logo" class="logo-image" />
+          <a href="#">AgriUnity</a>
+        </div>
+    
+        <div class="menu">
+          <div class="menu-links">
+            <div class="dropdown">
+              <a href="index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <a href="Materials.html">Agri Materials<span class="dropdown-arrow">&#9662;</span></a>
+              <div class="dropdown-content">
+                <a href="LOGINFORMAGR.html">Jntuk B.Tech</a>
+                <a href="jntukBTech.html" id="jntuk">JNTUK B.Tech PQP</a>
+                <a href="diploma.html" id="diploma">Diploma</a>
+                <a href="ecetMCQ.html">E-CET MCQ</a>
+                <a href="afoMCQ.html" id="afo-mcq">AFO MCQ</a>
+                <a href="pgcetMCQ.html" id="pgcet-mcq">PG-CET MCQ</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="result.html">JNTUK Updates</a>
+            </div>
+            <div class="dropdown">
+              <a href="jobupdates.html">Job & Training</a>
+            </div>
+            <div class="dropdown">
+              <a href="quiz.html">Quiz</a>
+            </div>
+            <div class="dropdown">
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <button class="log-in" onclick="location.href='LOGINFORMAGR.html'">Log In</button>
+        </div>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    
+  <header class="header">
+    <h1>Available Study Resources</h1>
+    <p>Select any material to view details</p>
+  </header>
+
+  <main class="materials-container">
+    <div class="material-card" onclick="goToPage('LOGINFORMAGR.html')">
+      <h2>JNTUK B.Tech</h2>
+      <p>B.Tech Study materials.</p>
+    </div>
+
+    <div class="material-card" onclick="goToPage('diploma.html')">
+      <h2>Diploma</h2>
+      <p>Study resources and old papers for diploma students.</p>
+    </div>
+
+    <div class="material-card" onclick="goToPage('ecetMCQ.html')">
+      <h2>ECET MCQ</h2>
+      <p>MCQ practice questions for ECET exam preparation.</p>
+    </div>
+
+    <div class="material-card" onclick="goToPage('afoMCQ.html')">
+      <h2>AFO MCQ</h2>
+      <p>MCQ collections for AFO competitive exams.</p>
+    </div>
+
+    <div class="material-card" onclick="goToPage('pgcetMCQ.html')">
+      <h2>PGCET MCQ</h2>
+      <p>MCQs for Postgraduate entrance test preparation.</p>
+    </div>
+    
+    <div class="material-card" onclick="goToPage('registrationform.html')">
+        <h2>New User Registration</h2>
+        <p>To Access the B.Tech Materials.</p>
+      </div>
+
+      <div class="material-card" onclick="goToPage('pqpbetch.html')">
+        <h2>B.Tech PQP</h2>
+        <p>Previous Year old question papers (Modal Papers) .</p>
+      </div>
+
+  </main>
+  <script src="materials.js"></script>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Phone: +91 9010923538</p>
+        <p>Email: <a href="mailto:support@agriunity.in">support@agriunity.in</a></p>
+      </div>
+  
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100065116946238" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/agriunity_?igsh=NzM0ZXVvdzJjbm5l" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:support@agriunity.in" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2021 AgriUnity. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

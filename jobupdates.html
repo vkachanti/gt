@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Updates | AgriUnity</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Correct FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
+  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="jobupdates.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="AgriUnityLogo.png" alt="AgriUnity Logo" class="logo-image" />
+          <a href="#">AgriUnity</a>
+        </div>
+    
+        <div class="menu">
+          <div class="menu-links">
+            <div class="dropdown">
+              <a href="index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <a href="Materials.html">Agri Materials<span class="dropdown-arrow">&#9662;</span></a>
+              <div class="dropdown-content">
+                <a href="LOGINFORMAGR.html">Jntuk B.Tech</a>
+                <a href="jntukBTech.html" id="jntuk">JNTUK B.Tech PQP</a>
+                <a href="diploma.html" id="diploma">Diploma</a>
+                <a href="ecetMCQ.html">E-CET MCQ</a>
+                <a href="afoMCQ.html" id="afo-mcq">AFO MCQ</a>
+                <a href="pgcetMCQ.html" id="pgcet-mcq">PG-CET MCQ</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="result.html">JNTUK Updates</a>
+            </div>
+            <div class="dropdown">
+              <a href="jobupdates.html">Job & Training</a>
+            </div>
+            <div class="dropdown">
+              <a href="quiz.html">Quiz</a>
+            </div>
+            <div class="dropdown">
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <button class="log-in" onclick="location.href='LOGINFORMAGR.html'">Log In</button>
+        </div>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+<section class="job-updates">
+  <h2>Latest Job Updates</h2>
+  <div class="job-cards">
+
+    <!-- Job Card 1 -->
+    <div class="job-card" onclick="openJobModal('Job Title 1', 'Full description about Job 1 goes here.', 'job1.jpg')">
+      <img src="agriwingsDrone.jpg" alt="Job Image 1">
+      <div class="job-info">
+        <h3>Job Title 1</h3>
+        <p>Uploaded: 28-Apr-2025</p>
+      </div>
+    </div>
+
+    <!-- Job Card 2 -->
+    <div class="job-card" onclick="openJobModal('Job Title 2', 'Full description about Job 2 goes here.', 'job2.jpg')">
+      <img src="agriwingsDrone.jpg" alt="Job Image 2">
+      <div class="job-info">
+        <h3>Job Title 2</h3>
+        <p>Uploaded: 27-Apr-2025</p>
+      </div>
+    </div>
+      <!-- Job Card 1 -->
+      <div class="job-card" onclick="openJobModal('Job Title 1', 'Full description about Job 1 goes here.', 'job1.jpg')">
+        <img src="agriwingsDrone.jpg" alt="Job Image 1">
+        <div class="job-info">
+          <h3>Job Title 1</h3>
+          <p>Uploaded: 28-Apr-2025</p>
+        </div>
+      </div>
+  
+      <!-- Job Card 2 -->
+      <div class="job-card" onclick="openJobModal('Job Title 2', 'Full description about Job 2 goes here.', 'job2.jpg')">
+        <img src="agriwingsDrone.jpg" alt="Job Image 2">
+        <div class="job-info">
+          <h3>Job Title 2</h3>
+          <p>Uploaded: 27-Apr-2025</p>
+        </div>
+      </div>
+        <!-- Job Card 1 -->
+    <div class="job-card" onclick="openJobModal('Job Title 1', 'Full description about Job 1 goes here.', 'job1.jpg')">
+        <img src="agriwingsDrone.jpg" alt="Job Image 1">
+        <div class="job-info">
+          <h3>Job Title 1</h3>
+          <p>Uploaded: 28-Apr-2025</p>
+        </div>
+      </div>
+  
+      <!-- Job Card 2 -->
+      <div class="job-card" onclick="openJobModal('Job Title 2', 'Full description about Job 2 goes here.', 'job2.jpg')">
+        <img src="agriwingsDrone.jpg" alt="Job Image 2">
+        <div class="job-info">
+          <h3>Job Title 2</h3>
+          <p>Uploaded: 27-Apr-2025</p>
+        </div>
+      </div>
+
+    <!-- Add more job cards like above -->
+    
+  </div>
+</section>
+
+<!-- Job Modal -->
+<div id="jobModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeJobModal()">&times;</span>
+    <img id="modalImage" src="" alt="Job Image">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+<script src="jobupdates.js"></script>
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Phone: +91 9010923538</p>
+        <p>Email: <a href="mailto:support@agriunity.in">support@agriunity.in</a></p>
+      </div>
+  
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100065116946238" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/agriunity_?igsh=NzM0ZXVvdzJjbm5l" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:support@agriunity.in" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2021 AgriUnity. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

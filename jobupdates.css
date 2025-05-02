@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --text-dark: hsl(240, 54%, 15%);
+  --text-light: hsl(242, 18%, 64%);
+  --primary: hsl(222, 98%, 60%);
+  --primary-lighter: hsl(240, 33%, 86%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.job-updates {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.job-updates h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--text-dark);
+}
+
+.job-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.job-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.job-info {
+  padding: 1rem;
+}
+
+.job-info h3 {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.job-info p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.modal-content p {
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+/* Responsive for all screen sizes */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .job-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .job-card {
+    width: 80%;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .job-updates h2 {
+    font-size: 1.5rem;
+  }
+  .job-card {
+    width: 90%;
+  }
+  .job-info h3 {
+    font-size: 1rem;
+  }
+  .modal-content {
+    padding: 1.5rem;
+  }
+}
